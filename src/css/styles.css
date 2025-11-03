@@ -194,3 +194,33 @@ main {
   font-weight: 500;
   margin-top: var(--spacing-xl);
 }
+
+/* Estilos para .profile-counters */
+.profile-counters {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 80px 0;
+  padding: 1.5rem 0;
+  background: var(--muted);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+
+}
+
+.profile-counters h4 {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.profile-counters span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  text-align: center;
+}
