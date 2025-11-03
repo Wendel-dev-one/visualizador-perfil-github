@@ -224,3 +224,79 @@ main {
   color: var(--foreground);
   text-align: center;
 }
+
+/* Estilos para os repositórios */
+.profile-repositories {
+  width: 100%;
+  margin: 0 auto;
+  background: var(--muted);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile-repositories h2 {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  text-align: center;
+}
+
+.repositories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.repository-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 1.25rem;
+  min-width: 220px;
+  max-width: 260px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.repository-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.repository-card h3 {
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  word-break: break-all;
+}
+
+.repository-stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.repository-stats span {
+  font-size: var(--font-sm);
+  color: var(--muted-foreground);
+  background: #d3d3d3;
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.7rem;
+  
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.repository-stats span:last-child {
+  margin-bottom: 0;
+}
